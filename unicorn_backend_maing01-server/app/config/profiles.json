@@ -1,0 +1,82 @@
+{
+  "{asid}": {
+    "profileList": ["AsidAuthorities","AsidExecutives","AsidLicenseOwner","Public"],
+    "useCaseMap": {}
+  },
+  "*": {
+    "profileList": ["Authorities","Executives","AwidLicenseOwner","Public","Authenticated","AwidInitiator","administrator","user","invitedUser"],
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "sysStateList": ["created","assigned"],
+        "profileList": ["AwidLicenseOwner","AwidInitiator"]
+      },
+      "sys/uuAppWorkspace/load": {
+        "sysStateList": ["active"],
+        "profileList": ["Authenticated"]
+      },
+      "sys/uuAppWorkspace/loadBasicData": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "defaultUve": {
+        "profileList": ["Public"]
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "sysStateList": ["created"],
+        "profileList": ["Public","AwidLicenseOwner"]
+      },
+      "list/get": {
+        "sysStateList": ["active"],
+        "profileList": ["administrator","user","invitedUser","Public"]
+      },
+      "list/create": {
+        "sysStateList": ["active"],
+        "profileList": ["administrator","user","Public"]
+      },
+      "list/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["administrator","user","Public"]
+      },
+      "list/updateArchive": {
+        "sysStateList": ["active"],
+        "profileList": ["user","Public"]
+      },
+      "list/updateShare": {
+        "sysStateList": ["active"],
+        "profileList": ["user","Public"]
+      },
+      "share/createShare": {
+        "sysStateList": ["active"],
+        "profileList": ["user","Public"]
+      },
+      "item/get": {
+        "sysStateList": ["active"],
+        "profileList": ["administrator","user","invitedUser","Public"]
+      },
+      "item/create": {
+        "sysStateList": ["active"],
+        "profileList": ["user","invitedUser","Public"]
+      },
+      "item/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["user","invitedUser","Public"]
+      },
+      "item/updateState": {
+        "sysStateList": ["active"],
+        "profileList": ["user","invitedUser","Public"]
+      },
+      "list/list": {
+        "sysStateList": ["active"],
+        "profileList": ["administrator","user","invitedUser","Public"]
+      },
+      "item/list": {
+        "sysStateList": ["active"],
+        "profileList": ["administrator","user","invitedUser","Public"]
+      },
+      "list/update": {
+        "sysStateList": ["active"],
+        "profileList": ["administrator","user","invitedUser","Public"]
+      }
+    }
+  }
+}
