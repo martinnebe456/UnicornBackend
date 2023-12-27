@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 const shoppingListsGetDtoInType = shape({
-    id: id().isRequired()
+    id: id()
 });
 
 const shoppingListsCreateDtoInType = shape({
@@ -11,7 +11,7 @@ const shoppingListsCreateDtoInType = shape({
 });
 
 const shoppingListsDeleteDtoInType = shape({
-    id: id().isRequired()
+    id: id()
 });
 
 const shoppingListsUpdateArchiveDtoInType = shape({
